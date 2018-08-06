@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/twenty_dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivProfileImage"
+            android:layout_width="@dimen/fifty_dp"
+            android:layout_height="@dimen/fifty_dp"
+            android:src="@mipmap/ic_launcher"
+            app:riv_border_color="#fff"
+            app:riv_oval="true" />
+
+        <com.example.zeeshankhalid.nytimesapiconsumption.views.RobotoLightTextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty_dp"
+            android:text="email@dummy.com"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp_sixteen" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/fifteen_dp"
+    android:paddingRight="@dimen/fifteen_dp">
+
+    <ImageView
+        android:id="@+id/ivMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_menu" />
+
+    <com.example.zeeshankhalid.nytimesapiconsumption.views.RobotoLightTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/twenty_dp"
+        android:layout_toEndOf="@id/ivMenu"
+        android:layout_toStartOf="@+id/llEndButtons"
+        android:ellipsize="end"
+        android:textColor="#fff"
+        android:textSize="@dimen/sp_sixteen" />
+
+    <EditText
+        android:layout_centerVertical="true"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:id="@+id/etSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twenty_dp"
+        android:layout_toEndOf="@id/ivMenu"
+        android:layout_toStartOf="@+id/llEndButtons"
+        android:backgroundTint="#ffffff"
+        android:textColorHint="#e6e6e6"
+        android:hint="Search"
+        android:textColor="#ffffff"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llEndButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/fifteen_dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/btnSubMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fifteen_dp"
+            android:src="@drawable/ic_dot_menu"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>
